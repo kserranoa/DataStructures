@@ -20,12 +20,15 @@ for x in datosPrueba:
 print("Dato mediante metadato")
 for x in range(0, len(datosPrueba)):
     print(datosPrueba[x])
+
     if x > 0:
         print("A:", datosPrueba[x-1])
     elif x == 0:
         print("A no existe")
-    
-    if x == len(datosPrueba):
+    else:
+        pass
+        
+    if x < (len(datosPrueba) - 1):
         print("S:", datosPrueba[x+1])
-    elif x > len(datosPrueba):
-        print("S no existe")
+    elif x == (len(datosPrueba)):
+        print("S no eiste")
